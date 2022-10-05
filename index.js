@@ -17,7 +17,7 @@ app.use(cors())
 //     res.send("Hello")
 // })
 app.use('/api/v1/store' , require('./routes/bookstoreroute'))
-const port = process.env.PORT
+const port = process.env.PORT || 5000
 app.listen(port, ()=>{
     console.log("Listening to port "+port)
 })
